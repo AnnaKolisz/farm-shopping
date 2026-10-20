@@ -1,0 +1,86 @@
+[
+  {
+    "id": "bintje",
+    "name": "Bintje",
+    "description": "Klasyczna odmiana o żółtym, mączystym miąższu. Świetna na frytki, puree i zupy.",
+    "season": "Sierpień – kwiecień",
+    "use": "Frytki, puree"
+  },
+  {
+    "id": "charlotte",
+    "name": "Charlotte",
+    "description": "Młode, jędrne ziemniaki o żółtym, stałym miąższu. Nie rozpadają się po ugotowaniu, idealne do sałatek.",
+    "season": "Czerwiec – listopad",
+    "use": "Sałatki, gotowanie"
+  },
+  {
+    "id": "ratte",
+    "name": "Ratte",
+    "description": "Małe, wydłużone ziemniaki o delikatnym, orzechowym smaku przypominającym kasztany. Ceniona w kuchni francuskiej.",
+    "season": "Wrzesień – grudzień",
+    "use": "Pieczenie, puree"
+  },
+  {
+    "id": "amandine",
+    "name": "Amandine",
+    "description": "Wydłużone, o cienkiej skórce i kremowym, stałym miąższu. Delikatny smak, dobrze trzyma formę.",
+    "season": "Wrzesień – marzec",
+    "use": "Sałatki, gotowanie na parze"
+  },
+  {
+    "id": "belle-de-fontenay",
+    "name": "Belle de Fontenay",
+    "description": "Stara francuska odmiana o jędrnym, delikatnym miąższu i lekko maślanym smaku. Nie rozpada się podczas gotowania.",
+    "season": "Czerwiec – październik",
+    "use": "Sałatki, gotowanie"
+  },
+  {
+    "id": "monalisa",
+    "name": "Monalisa",
+    "description": "Uniwersalna odmiana o żółtej skórce i półmączystym miąższu. Dobra do gotowania, puree i zapiekania.",
+    "season": "Sierpień – marzec",
+    "use": "Uniwersalna"
+  },
+  {
+    "id": "agria",
+    "name": "Agria",
+    "description": "Mączysta odmiana o głębokożółtym miąższu. Chrupiąca po usmażeniu, kremowa w puree.",
+    "season": "Wrzesień – kwiecień",
+    "use": "Frytki, puree, gnocchi"
+  },
+  {
+    "id": "vitelotte",
+    "name": "Vitelotte",
+    "description": "Fioletowo-granatowy ziemniak o intensywnie fioletowym miąższu i delikatnym smaku kasztanów. Zachowuje kolor po ugotowaniu.",
+    "season": "Wrzesień – styczeń",
+    "use": "Puree, sałatki"
+  },
+  {
+    "id": "desiree",
+    "name": "Désirée",
+    "description": "Odmiana o czerwonej skórce i żółtym, wilgotnym miąższu. Uniwersalna, dobrze sprawdza się w gotowaniu i pieczeniu.",
+    "season": "Sierpień – luty",
+    "use": "Gotowanie, pieczenie"
+  },
+  {
+    "id": "annabelle",
+    "name": "Annabelle",
+    "description": "Wczesna, drobna odmiana o delikatnym, kremowym miąższu. Idealna jako młode ziemniaki.",
+    "season": "Czerwiec – sierpień",
+    "use": "Młode ziemniaki, sałatki"
+  },
+  {
+    "id": "lord",
+    "name": "Lord",
+    "description": "Popularna polska odmiana wczesna o jasnożółtym, lekko mączystym miąższu. Dobra na obiad, puree i kluski.",
+    "season": "Czerwiec – październik",
+    "use": "Obiadowe, puree"
+  },
+  {
+    "id": "irga",
+    "name": "Irga",
+    "description": "Polska odmiana o żółtym miąższu, średnio mączysta, o dobrym smaku. Chętnie uprawiana w przydomowych ogródkach.",
+    "season": "Sierpień – marzec",
+    "use": "Obiadowe, kluski"
+  }
+]

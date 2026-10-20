@@ -1,0 +1,93 @@
+[
+  {
+    "id": "antonowka",
+    "name": "Antonówka",
+    "description": "Stara polska odmiana o kwaśnym, aromatycznym miąższu. Doskonała do szarlotki, kompotów i przetworów.",
+    "season": "Wrzesień – październik",
+    "use": "Wypieki, przetwory"
+  },
+  {
+    "id": "papierowka",
+    "name": "Papierówka",
+    "description": "Bardzo wczesne, soczyste jabłka o cienkiej skórce i delikatnie kwaskowym smaku. Nie nadają się do długiego przechowywania.",
+    "season": "Lipiec – sierpień",
+    "use": "Na surowo, mus"
+  },
+  {
+    "id": "szampion",
+    "name": "Szampion",
+    "description": "Duże, słodkie i chrupiące jabłka o jasnożółtej skórce z rumieńcem. Bardzo popularne w Polsce, dobrze się przechowują.",
+    "season": "Październik – marzec",
+    "use": "Na surowo, wypieki"
+  },
+  {
+    "id": "ligol",
+    "name": "Ligol",
+    "description": "Duże, czerwone jabłka o słodko-kwaskowym, soczystym miąższu. Polska odmiana, świetna do jedzenia na surowo i na sok.",
+    "season": "Październik – kwiecień",
+    "use": "Na surowo, soki"
+  },
+  {
+    "id": "idared",
+    "name": "Idared",
+    "description": "Twarde, kwaskowate jabłka o czerwonym rumieńcu, bardzo trwałe. Dobre do pieczenia, tracą kwasowość w trakcie przechowywania.",
+    "season": "Październik – maj",
+    "use": "Pieczenie, wypieki"
+  },
+  {
+    "id": "jonagold",
+    "name": "Jonagold",
+    "description": "Duże jabłka o złoto-czerwonej skórce, soczyste i aromatyczne, o równowadze słodyczy i kwasowości.",
+    "season": "Październik – luty",
+    "use": "Na surowo, wypieki"
+  },
+  {
+    "id": "gala",
+    "name": "Gala",
+    "description": "Małe lub średnie jabłka o słodkim smaku i chrupiącym miąższu, żółte z czerwonymi pasami. Lubiane przez dzieci.",
+    "season": "Wrzesień – styczeń",
+    "use": "Na surowo, do lunchboxa"
+  },
+  {
+    "id": "golden-delicious",
+    "name": "Golden Delicious",
+    "description": "Żółtozłote jabłka o słodkim, łagodnym smaku i miękkim miąższu. Uniwersalne, ale łatwo się obijają.",
+    "season": "Wrzesień – marzec",
+    "use": "Na surowo, sosy"
+  },
+  {
+    "id": "granny-smith",
+    "name": "Granny Smith",
+    "description": "Intensywnie zielone, bardzo kwaśne i twarde jabłka. Doskonałe do ciast, sałatek i do jedzenia dla miłośników kwaśnego smaku.",
+    "season": "Październik – lipiec",
+    "use": "Wypieki, sałatki"
+  },
+  {
+    "id": "fuji",
+    "name": "Fuji",
+    "description": "Bardzo słodkie, chrupiące i soczyste jabłka o różowoczerwonej skórce. Długo się przechowują.",
+    "season": "Październik – lipiec",
+    "use": "Na surowo"
+  },
+  {
+    "id": "pink-lady",
+    "name": "Pink Lady",
+    "description": "Jabłka o różowej skórce, bardzo chrupiące, słodko-kwaśne i aromatyczne. Rzadko brązowieją po przekrojeniu.",
+    "season": "Listopad – lipiec",
+    "use": "Na surowo, sałatki"
+  },
+  {
+    "id": "cox",
+    "name": "Cox Orange",
+    "description": "Angielska odmiana o bogatym, orzechowo-korzennym aromacie. Uważana za jedną z najsmaczniejszych, ale wymagająca w uprawie.",
+    "season": "Wrzesień – grudzień",
+    "use": "Na surowo"
+  },
+  {
+    "id": "reneta",
+    "name": "Szara reneta",
+    "description": "Stara odmiana o szorstkiej, szarobrązowej skórce i intensywnym, kwaskowo-korzennym smaku. Cenna w tradycyjnej kuchni.",
+    "season": "Październik – kwiecień",
+    "use": "Pieczenie, wypieki"
+  }
+]

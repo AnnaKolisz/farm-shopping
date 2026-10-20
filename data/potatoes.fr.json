@@ -1,0 +1,86 @@
+[
+  {
+    "id": "bintje",
+    "name": "Bintje",
+    "description": "Variété classique à la chair jaune et farineuse. Parfaite pour les frites, les purées et les soupes.",
+    "season": "Août – avril",
+    "use": "Frites, purée"
+  },
+  {
+    "id": "charlotte",
+    "name": "Charlotte",
+    "description": "Pomme de terre ferme à chair jaune qui ne se défait pas à la cuisson. Idéale pour les salades.",
+    "season": "Juin – novembre",
+    "use": "Salades, cuisson à l'eau"
+  },
+  {
+    "id": "ratte",
+    "name": "Ratte",
+    "description": "Petite pomme de terre allongée au goût fin de noisette, proche de la châtaigne. Très appréciée des chefs français.",
+    "season": "Septembre – décembre",
+    "use": "Rôtie, purée"
+  },
+  {
+    "id": "amandine",
+    "name": "Amandine",
+    "description": "Allongée, à la peau fine et à la chair crémeuse et ferme. Saveur délicate, bonne tenue à la cuisson.",
+    "season": "Septembre – mars",
+    "use": "Salades, vapeur"
+  },
+  {
+    "id": "belle-de-fontenay",
+    "name": "Belle de Fontenay",
+    "description": "Ancienne variété française à la chair fine et ferme, au goût légèrement beurré. Ne se délite pas à la cuisson.",
+    "season": "Juin – octobre",
+    "use": "Salades, cuisson à l'eau"
+  },
+  {
+    "id": "monalisa",
+    "name": "Monalisa",
+    "description": "Variété polyvalente à la peau jaune et à la chair mi-farineuse. Bonne bouillie, en purée ou en gratin.",
+    "season": "Août – mars",
+    "use": "Polyvalente"
+  },
+  {
+    "id": "agria",
+    "name": "Agria",
+    "description": "Variété farineuse à la chair jaune foncé. Croustillante une fois frite, onctueuse en purée.",
+    "season": "Septembre – avril",
+    "use": "Frites, purée, gnocchis"
+  },
+  {
+    "id": "vitelotte",
+    "name": "Vitelotte",
+    "description": "Pomme de terre à la peau et à la chair violet intense, au goût délicat de châtaigne. Garde sa couleur à la cuisson.",
+    "season": "Septembre – janvier",
+    "use": "Purée, salades"
+  },
+  {
+    "id": "desiree",
+    "name": "Désirée",
+    "description": "Variété à la peau rouge et à la chair jaune et humide. Polyvalente, elle convient à la cuisson à l'eau et au four.",
+    "season": "Août – février",
+    "use": "Cuisson à l'eau, four"
+  },
+  {
+    "id": "annabelle",
+    "name": "Annabelle",
+    "description": "Petite variété précoce à la chair fine et crémeuse. Idéale comme pomme de terre nouvelle.",
+    "season": "Juin – août",
+    "use": "Primeur, salades"
+  },
+  {
+    "id": "lord",
+    "name": "Lord",
+    "description": "Variété polonaise précoce très répandue, à la chair jaune clair légèrement farineuse. Bonne pour les repas, la purée et les gnocchis.",
+    "season": "Juin – octobre",
+    "use": "Repas, purée"
+  },
+  {
+    "id": "irga",
+    "name": "Irga",
+    "description": "Variété polonaise à la chair jaune, mi-farineuse et savoureuse. Très cultivée dans les jardins familiaux.",
+    "season": "Août – mars",
+    "use": "Repas, gnocchis"
+  }
+]

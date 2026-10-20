@@ -1,0 +1,93 @@
+[
+  {
+    "id": "antonowka",
+    "name": "Antonovka",
+    "description": "Vieille variété polonaise à la chair acidulée et aromatique. Excellente pour les tartes, les compotes et les conserves.",
+    "season": "Septembre – octobre",
+    "use": "Pâtisserie, conserves"
+  },
+  {
+    "id": "papierowka",
+    "name": "Transparente blanche (Papierówka)",
+    "description": "Pomme très précoce, juteuse, à la peau fine et au goût légèrement acidulé. Ne se conserve pas longtemps.",
+    "season": "Juillet – août",
+    "use": "À croquer, compote"
+  },
+  {
+    "id": "szampion",
+    "name": "Champion",
+    "description": "Grosse pomme sucrée et croquante, jaune clair avec un voile rouge. Très populaire en Pologne, elle se conserve bien.",
+    "season": "Octobre – mars",
+    "use": "À croquer, pâtisserie"
+  },
+  {
+    "id": "ligol",
+    "name": "Ligol",
+    "description": "Grosse pomme rouge à la chair juteuse, aigre-douce. Variété polonaise idéale à croquer ou pour le jus.",
+    "season": "Octobre – avril",
+    "use": "À croquer, jus"
+  },
+  {
+    "id": "idared",
+    "name": "Idared",
+    "description": "Pomme ferme et acidulée, à la joue rouge, très bonne conservation. Bonne cuite, elle perd de son acidité au stockage.",
+    "season": "Octobre – mai",
+    "use": "Cuisson, pâtisserie"
+  },
+  {
+    "id": "jonagold",
+    "name": "Jonagold",
+    "description": "Grosse pomme à la peau jaune-rouge, juteuse et parfumée, avec un bon équilibre entre sucre et acidité.",
+    "season": "Octobre – février",
+    "use": "À croquer, pâtisserie"
+  },
+  {
+    "id": "gala",
+    "name": "Gala",
+    "description": "Pomme petite à moyenne, sucrée et croquante, jaune rayée de rouge. Appréciée des enfants.",
+    "season": "Septembre – janvier",
+    "use": "À croquer, goûter"
+  },
+  {
+    "id": "golden-delicious",
+    "name": "Golden Delicious",
+    "description": "Pomme jaune doré au goût doux et à la chair tendre. Polyvalente, mais elle se meurtrit facilement.",
+    "season": "Septembre – mars",
+    "use": "À croquer, compotes"
+  },
+  {
+    "id": "granny-smith",
+    "name": "Granny Smith",
+    "description": "Pomme d'un vert vif, très acide et ferme. Parfaite pour les tartes, les salades et pour les amateurs d'acidité.",
+    "season": "Octobre – juillet",
+    "use": "Pâtisserie, salades"
+  },
+  {
+    "id": "fuji",
+    "name": "Fuji",
+    "description": "Pomme très sucrée, croquante et juteuse, à la peau rouge rosé. Se conserve longtemps.",
+    "season": "Octobre – juillet",
+    "use": "À croquer"
+  },
+  {
+    "id": "pink-lady",
+    "name": "Pink Lady",
+    "description": "Pomme à la peau rosée, très croquante, aigre-douce et parfumée. Brunit peu une fois coupée.",
+    "season": "Novembre – juillet",
+    "use": "À croquer, salades"
+  },
+  {
+    "id": "cox",
+    "name": "Cox's Orange Pippin",
+    "description": "Variété anglaise au riche parfum de noisette et d'épices. Considérée comme l'une des meilleures, mais exigeante à cultiver.",
+    "season": "Septembre – décembre",
+    "use": "À croquer"
+  },
+  {
+    "id": "reneta",
+    "name": "Reinette grise",
+    "description": "Vieille variété à la peau rugueuse gris-brun et au goût intense, acidulé et épicé. Précieuse en cuisine traditionnelle.",
+    "season": "Octobre – avril",
+    "use": "Cuisson, pâtisserie"
+  }
+]
