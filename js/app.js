@@ -1,14 +1,34 @@
 const CATEGORIES = [
-  { id: "apples", emoji: "🍎" },
-  { id: "potatoes", emoji: "🥔" },
-  { id: "tomatoes", emoji: "🍅" }
+  { id: "potatoes" },
+  { id: "tomatoes" },
+  { id: "apples" }
 ];
+
+const LANGS = ["pl", "fr"];
+
+// Ikony liniowe 24x24; kolor bierze się z currentColor, więc działają w obu motywach.
+const ICONS = {
+  potatoes:
+    '<path d="M4.5 12.5c-.3-4 3-7.5 7.500-7.500 4.500 0 8 2.500 7.500 7-.4 4.300-3.800 7-8 7-4 0-6.800-2.500-7-6.500z"/>' +
+    '<path d="M9 10.500h.01M14.500 9.500h.01M12 14.500h.01M16.500 14h.01M8.500 15h.01"/>',
+  tomatoes:
+    '<path d="M12 7.500c-5 0-8.500 2.800-8.500 6.500s3.500 6.500 8.500 6.500 8.500-2.800 8.500-6.500S17 7.500 12 7.500z"/>' +
+    '<path d="M12 7.500 9 5.500M12 7.500l3-2M12 7.500V4M12 7.500 8 8.500M12 7.500l4 1"/>',
+  apples:
+    '<path d="M12 8.500c-1.500-1.200-5-1.500-6.500 1.500s-.5 7.500 2 10c1.500 1.500 3 .8 4.500.8s3 .7 4.500-.8c2.500-2.500 3.500-7 2-10s-5-2.700-6.500-1.500z"/>' +
+    '<path d="M12 8.500c0-2 .5-3.500 2-5M14 4.500c1.500-.5 3 0 3.500 1-1 1-2.800.9-3.500-1z"/>'
+};
+
+const iconSvg = (id) =>
+  `<svg class="cat-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${ICONS[id]}</svg>`;
 
 const I18N = {
   pl: {
     title: "Bazarek",
     categoriesTitle: "Wybierz kategorię",
-    categoriesSubtitle: "Poznaj odmiany owoców i warzyw z bazarku.",
+    langLabel: "POL",
+    langAria: "Wybierz język",
+    themeAria: "Przełącz motyw jasny/ciemny",
     categoryNames: { apples: "Jabłka", potatoes: "Ziemniaki", tomatoes: "Pomidory" },
     back: "← Wróć do kategorii",
     searchPlaceholder: "Szukaj odmiany, smaku, zastosowania…",
@@ -21,7 +41,9 @@ const I18N = {
   fr: {
     title: "Bazarek",
     categoriesTitle: "Choisissez une catégorie",
-    categoriesSubtitle: "Découvrez les variétés de fruits et légumes du marché.",
+    langLabel: "FRA",
+    langAria: "Choisir la langue",
+    themeAria: "Basculer entre thème clair et sombre",
     categoryNames: { apples: "Pommes", potatoes: "Pommes de terre", tomatoes: "Tomates" },
     back: "← Retour aux catégories",
     searchPlaceholder: "Chercher une variété, un goût, un usage…",
@@ -35,6 +57,7 @@ const I18N = {
 
 const state = {
   lang: localStorage.getItem("bazarek-lang") === "fr" ? "fr" : "pl",
+  theme: document.documentElement.dataset.theme === "dark" ? "dark" : "light",
   category: null,
   query: "",
   cache: {}
@@ -59,15 +82,41 @@ function renderStaticTexts() {
   const t = I18N[state.lang];
   document.documentElement.lang = state.lang;
   document.title = t.title;
-  $("app-title").textContent = t.title;
   $("categories-title").textContent = t.categoriesTitle;
-  $("categories-subtitle").textContent = t.categoriesSubtitle;
   $("back-btn").textContent = t.back;
   $("search").placeholder = t.searchPlaceholder;
   $("search").setAttribute("aria-label", t.searchPlaceholder);
-  document.querySelectorAll(".lang-btn").forEach((btn) => {
-    btn.setAttribute("aria-pressed", String(btn.dataset.lang === state.lang));
-  });
+  $("lang-flag").dataset.lang = state.lang;
+  $("lang-code").textContent = t.langLabel;
+  $("lang-btn").setAttribute("aria-label", t.langAria);
+  renderLangMenu();
+  $("theme-btn").setAttribute("aria-label", t.themeAria);
+}
+
+function renderLangMenu() {
+  const list = $("lang-list");
+  list.replaceChildren();
+  for (const lang of LANGS) {
+    const item = document.createElement("li");
+    const option = document.createElement("button");
+    option.type = "button";
+    option.className = "lang-option";
+    option.innerHTML = '<span class="flag" aria-hidden="true"></span><span class="code"></span>';
+    option.querySelector(".flag").dataset.lang = lang;
+    option.querySelector(".code").textContent = I18N[lang].langLabel;
+    if (lang === state.lang) option.setAttribute("aria-current", "true");
+    option.addEventListener("click", () => {
+      closeLangMenu();
+      if (lang !== state.lang) setLang(lang);
+    });
+    item.append(option);
+    list.append(item);
+  }
+}
+
+function closeLangMenu() {
+  $("lang-list").hidden = true;
+  $("lang-btn").setAttribute("aria-expanded", "false");
 }
 
 async function renderCategories() {
@@ -78,14 +127,10 @@ async function renderCategories() {
     const button = document.createElement("button");
     button.type = "button";
     button.className = "category-card";
-    button.innerHTML = '<span class="emoji"></span><span class="name"></span><span class="count"></span>';
-    button.querySelector(".emoji").textContent = cat.emoji;
+    button.innerHTML = `${iconSvg(cat.id)}<span class="name"></span>`;
     button.querySelector(".name").textContent = t.categoryNames[cat.id];
     button.addEventListener("click", () => openCategory(cat.id));
     container.append(button);
-    loadData(cat.id, state.lang)
-      .then((items) => { button.querySelector(".count").textContent = t.varieties(items.length); })
-      .catch(() => {});
   }
 }
 
@@ -105,7 +150,7 @@ function makeCard(item, t) {
   season.className = "tag";
   season.textContent = `${t.season}: ${item.season}`;
   const use = document.createElement("span");
-  use.className = "tag use";
+  use.className = "tag";
   use.textContent = `${t.use}: ${item.use}`;
   meta.append(season, use);
 
@@ -116,7 +161,7 @@ function makeCard(item, t) {
 async function renderVarieties() {
   const t = I18N[state.lang];
   const container = $("varieties");
-  $("category-title").textContent = `${CATEGORIES.find((c) => c.id === state.category).emoji} ${t.categoryNames[state.category]}`;
+  $("category-title").textContent = t.categoryNames[state.category];
 
   let items;
   try {
@@ -175,8 +220,28 @@ function setLang(lang) {
   else renderCategories();
 }
 
-document.querySelectorAll(".lang-btn").forEach((btn) =>
-  btn.addEventListener("click", () => setLang(btn.dataset.lang))
+function setTheme(theme) {
+  state.theme = theme;
+  document.documentElement.dataset.theme = theme;
+  localStorage.setItem("bazarek-theme", theme);
+}
+
+$("lang-btn").addEventListener("click", () => {
+  const open = $("lang-list").hidden;
+  $("lang-list").hidden = !open;
+  $("lang-btn").setAttribute("aria-expanded", String(open));
+});
+document.addEventListener("click", (e) => {
+  if (!$("lang-menu").contains(e.target)) closeLangMenu();
+});
+document.addEventListener("keydown", (e) => {
+  if (e.key === "Escape" && !$("lang-list").hidden) {
+    closeLangMenu();
+    $("lang-btn").focus();
+  }
+});
+$("theme-btn").addEventListener("click", () =>
+  setTheme(state.theme === "dark" ? "light" : "dark")
 );
 $("search").addEventListener("input", (e) => {
   state.query = e.target.value;
