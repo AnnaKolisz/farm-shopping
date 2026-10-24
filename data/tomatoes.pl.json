@@ -2,6 +2,7 @@
   {
     "id": "malinowy-ozarowski",
     "name": "Malinowy Ożarowski",
+    "taste": "Słodki, aromatyczny, mało kwaśny",
     "description": "Polska odmiana o dużych, malinowych, mięsistych owocach. Słodkie, aromatyczne, ulubieniec polskich ogrodów.",
     "season": "Lipiec – wrzesień",
     "use": "Na surowo, sałatki"
@@ -9,6 +10,7 @@
   {
     "id": "lima",
     "name": "Lima",
+    "taste": "Wyrównany, łagodny, lekko słodki",
     "description": "Średniej wielkości czerwone pomidory o zwartym miąższu i wyrównanym smaku. Popularne na polskich targach.",
     "season": "Lipiec – wrzesień",
     "use": "Na surowo, kanapki"
@@ -16,6 +18,7 @@
   {
     "id": "cherry",
     "name": "Cherry (koktajlowy)",
+    "taste": "Bardzo słodki i owocowy",
     "description": "Małe, bardzo słodkie pomidorki w kształcie kulek, czerwone lub żółte. Zrywane gronami.",
     "season": "Czerwiec – październik",
     "use": "Przekąska, sałatki"
@@ -23,6 +26,7 @@
   {
     "id": "sungold",
     "name": "Sungold",
+    "taste": "Bardzo słodki, owocowy, z tropikalną nutą",
     "description": "Pomarańczowe pomidorki koktajlowe o bardzo słodkim, owocowym smaku. Plenne i aromatyczne.",
     "season": "Lipiec – październik",
     "use": "Przekąska, sałatki"
@@ -30,6 +34,7 @@
   {
     "id": "roma",
     "name": "Roma",
+    "taste": "Łagodny, lekko słodki, mięsisty",
     "description": "Wydłużone, mięsiste pomidory z małą ilością soku i nasion. Doskonałe do sosów i przecierów.",
     "season": "Lipiec – wrzesień",
     "use": "Sosy, przetwory"
@@ -37,6 +42,7 @@
   {
     "id": "san-marzano",
     "name": "San Marzano",
+    "taste": "Słodki, mało kwaśny, intensywny",
     "description": "Włoska odmiana o wydłużonych, cienkoskórych owocach, słodka i mało kwaśna. Standard do sosów i pizzy.",
     "season": "Lipiec – wrzesień",
     "use": "Sosy, pizza"
@@ -44,6 +50,7 @@
   {
     "id": "marmande",
     "name": "Marmande",
+    "taste": "Soczysty, słodko-kwaskowy, aromatyczny",
     "description": "Duże, żebrowane, spłaszczone pomidory o soczystym, aromatycznym miąższu. Klasyk kuchni śródziemnomorskiej.",
     "season": "Lipiec – wrzesień",
     "use": "Na surowo, faszerowane"
@@ -51,6 +58,7 @@
   {
     "id": "bawole-serce",
     "name": "Bawole serce (Coeur de Boeuf)",
+    "taste": "Słodki, łagodny, mięsisty",
     "description": "Bardzo duże owoce w kształcie serca, mięsiste, z niewielką ilością nasion i słodkim smakiem.",
     "season": "Lipiec – wrzesień",
     "use": "Na surowo, sałatki"
@@ -58,6 +66,7 @@
   {
     "id": "noire-de-crimee",
     "name": "Noire de Crimée",
+    "taste": "Głęboki, słodko-słonawy, z lekko dymną nutą",
     "description": "Ciemne, czerwono-brązowe pomidory o głębokim, słodko-słonawym smaku. Odmiana z Krymu.",
     "season": "Lipiec – wrzesień",
     "use": "Na surowo, carpaccio"
@@ -65,6 +74,7 @@
   {
     "id": "ananas",
     "name": "Ananas",
+    "taste": "Słodki, owocowy, bardzo łagodny",
     "description": "Duże, żółto-pomarańczowe pomidory z czerwonymi smugami. Słodkie, owocowe i bardzo soczyste.",
     "season": "Lipiec – wrzesień",
     "use": "Na surowo, sałatki"
@@ -72,6 +82,7 @@
   {
     "id": "green-zebra",
     "name": "Green Zebra",
+    "taste": "Orzeźwiająco kwaskowy, lekko pikantny",
     "description": "Zielone pomidory w jasnozielone pasy. Lekko kwaskowe, z odrobiną pikantności, orzeźwiające.",
     "season": "Lipiec – wrzesień",
     "use": "Sałatki, na surowo"
@@ -79,6 +90,7 @@
   {
     "id": "rose-de-berne",
     "name": "Różowy z Berna (Rose de Berne)",
+    "taste": "Bardzo słodki, łagodny i delikatny",
     "description": "Szwajcarska odmiana o średnich, różowych owocach, delikatnej skórce i bardzo słodkim, łagodnym smaku.",
     "season": "Lipiec – wrzesień",
     "use": "Na surowo, sałatki"

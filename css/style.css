@@ -1,6 +1,13 @@
 :root {
   --light: #fbf7ef;
-  --dark: #2f4858;
+  --light-200: #F4E9D3;
+  --light-300: #EDDBB7;
+  --dark: #243844;
+  --dark-900: #2D4656;
+  --dark-800: #375669;
+  --light-green: #81AE4F;
+  --dark-green: #6a994e;
+
   --header-height: 4rem;
 }
 
@@ -8,23 +15,24 @@
 :root,
 :root[data-theme="light"] {
   --bg: var(--light);
+  --clr-accent: var(--light-200);
+  --clr-border-accent: var(--light-green);
+    --clr-border-subtle: var(--light-300);
+  --clr-hover-shadow: var(--light-300);
   --fg: var(--dark);
-  --glass: rgba(251, 247, 239, 0.55);
-  --glass-edge: rgba(47, 72, 88, 0.12);
   color-scheme: light;
 }
 
 :root[data-theme="dark"] {
   --bg: var(--dark);
+  --clr-accent: var(--dark-900);
+  --clr-border-accent: var(--dark-green);
+  --clr-hover-shadow: var(--dark-900);
   --fg: var(--light);
-  --glass: rgba(47, 72, 88, 0.55);
-  --glass-edge: rgba(251, 247, 239, 0.22);
   color-scheme: dark;
 }
 
 * { box-sizing: border-box; }
-
-html { -webkit-text-size-adjust: 100%; }
 
 body {
   margin: 0;
@@ -82,19 +90,25 @@ main {
   gap: 0.25rem;
   background: none;
   border: none;
-  padding: 0.5rem 1rem;
+  padding: 2rem;
   font-size: clamp(2rem, 8vw, 3rem);
   font-weight: 400;
   letter-spacing: 0.03em;
   cursor: pointer;
   opacity: 0.95;
-  transition: opacity 0.15s, transform 0.15s;
+  width: min(100%, 26rem);
+  text-align: center;
+  border-radius: 24px;
+  box-shadow: 0 6px 24px 0 var(--clr-hover-shadow);
+  transition: opacity 0.15s, transform 0.15s, box-shadow 0.25s;
+  border: 1px solid var(--clr-border-accent);
 }
 
 .category-card:hover,
 .category-card:focus-visible {
   opacity: 1;
   transform: scale(1.04);
+  box-shadow: 0 6px 24px 6px var(--clr-hover-shadow);
 }
 
 .cat-icon { width: 3.25rem; height: 3.25rem; opacity: 0.8; }
@@ -118,7 +132,7 @@ h1 { margin: 0.5rem 0 1rem; font-size: 2rem; font-weight: 400; letter-spacing: 0
   color: var(--fg);
   background: transparent;
   border: none;
-  border-bottom: 1px solid var(--glass-edge);
+  border-bottom: 1px solid var(--clr-accent);
   border-radius: 0;
   margin: 0 0 0.75rem;
 }
@@ -136,11 +150,13 @@ h1 { margin: 0.5rem 0 1rem; font-size: 2rem; font-weight: 400; letter-spacing: 0
 
 .variety-card {
   padding: 1rem 1.1rem;
-  border: 1px solid var(--glass-edge);
+  border: 1px solid var(--clr-border-accent);
   border-radius: 12px;
 }
 
 .variety-card h2 { margin: 0 0 0.4rem; font-size: 1.2rem; font-weight: 700; }
+.variety-card .taste { margin: 0 0 0.5rem; font-size: 0.9rem; font-weight: 400; }
+.variety-card .taste strong { font-weight: 700; }
 .variety-card p { margin: 0 0 0.75rem; font-weight: 300; }
 
 .meta { display: flex; flex-wrap: wrap; gap: 0.4rem; }
@@ -149,14 +165,14 @@ h1 { margin: 0.5rem 0 1rem; font-size: 2rem; font-weight: 400; letter-spacing: 0
   font-size: 0.8rem;
   padding: 0.15rem 0.6rem;
   border-radius: 999px;
-  border: 1px solid var(--glass-edge);
+  border: 1px solid var(--clr-border-subtle);
 }
 
 .message {
   grid-column: 1 / -1;
   padding: 1.5rem;
   text-align: center;
-  border: 1px dashed var(--glass-edge);
+  border: 1px dashed var(--clr-accent);
   border-radius: 12px;
 }
 
@@ -170,12 +186,10 @@ h1 { margin: 0.5rem 0 1rem; font-size: 2rem; font-weight: 400; letter-spacing: 0
   align-items: center;
   height: var(--header-height);
   padding: 0 1.25rem;
-  background: var(--glass);
-  -webkit-backdrop-filter: blur(14px) saturate(140%);
-  backdrop-filter: blur(14px) saturate(140%);
-  border-bottom: 1px solid var(--glass-edge);
+  background: color-mix(in srgb, var(--bg) 80%, transparent);
+  -webkit-backdrop-filter: blur(12px);
+  backdrop-filter: blur(12px);
 }
-
 .logo {
   font-family: "Mystery Quest", "Oxygen", system-ui, sans-serif;
   font-size: 1.8rem;
@@ -218,7 +232,6 @@ h1 { margin: 0.5rem 0 1rem; font-size: 2rem; font-weight: 400; letter-spacing: 0
   width: 1.1rem;
   height: 1.1rem;
   border-radius: 50%;
-  border: 1px solid var(--glass-edge);
   flex: none;
 }
 
@@ -236,7 +249,6 @@ h1 { margin: 0.5rem 0 1rem; font-size: 2rem; font-weight: 400; letter-spacing: 0
   padding: 0.3rem;
   list-style: none;
   background: var(--bg);
-  border: 1px solid var(--glass-edge);
   border-radius: 12px;
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
 }
@@ -257,5 +269,5 @@ h1 { margin: 0.5rem 0 1rem; font-size: 2rem; font-weight: 400; letter-spacing: 0
   cursor: pointer;
 }
 
-.lang-option:hover { background: var(--glass-edge); }
+.lang-option:hover { background-color: var(--clr-accent); }
 .lang-option[aria-current="true"] { font-weight: 700; }

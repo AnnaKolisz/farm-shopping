@@ -2,6 +2,7 @@
   {
     "id": "malinowy-ozarowski",
     "name": "Malinowy Ożarowski",
+    "taste": "Sucré, aromatique, peu acide",
     "description": "Variété polonaise aux gros fruits framboise, charnus. Sucrée et aromatique, favorite des jardins polonais.",
     "season": "Juillet – septembre",
     "use": "Crue, salades"
@@ -9,6 +10,7 @@
   {
     "id": "lima",
     "name": "Lima",
+    "taste": "Équilibré, doux, légèrement sucré",
     "description": "Tomate rouge de taille moyenne à la chair ferme et au goût équilibré. Courante sur les marchés polonais.",
     "season": "Juillet – septembre",
     "use": "Crue, sandwichs"
@@ -16,6 +18,7 @@
   {
     "id": "cherry",
     "name": "Tomate cerise",
+    "taste": "Très sucré et fruité",
     "description": "Petites tomates très sucrées en forme de billes, rouges ou jaunes. Récoltées en grappes.",
     "season": "Juin – octobre",
     "use": "Apéritif, salades"
@@ -23,6 +26,7 @@
   {
     "id": "sungold",
     "name": "Sungold",
+    "taste": "Très sucré, fruité, aux notes tropicales",
     "description": "Tomate cerise orange au goût très sucré et fruité. Productive et parfumée.",
     "season": "Juillet – octobre",
     "use": "Apéritif, salades"
@@ -30,6 +34,7 @@
   {
     "id": "roma",
     "name": "Roma",
+    "taste": "Doux, légèrement sucré, charnu",
     "description": "Tomate allongée et charnue, peu juteuse et peu de pépins. Excellente pour les sauces et les coulis.",
     "season": "Juillet – septembre",
     "use": "Sauces, conserves"
@@ -37,6 +42,7 @@
   {
     "id": "san-marzano",
     "name": "San Marzano",
+    "taste": "Sucré, peu acide, intense",
     "description": "Variété italienne allongée à la peau fine, douce et peu acide. La référence pour les sauces et la pizza.",
     "season": "Juillet – septembre",
     "use": "Sauces, pizza"
@@ -44,6 +50,7 @@
   {
     "id": "marmande",
     "name": "Marmande",
+    "taste": "Juteux, aigre-doux, aromatique",
     "description": "Grosse tomate côtelée et aplatie, à la chair juteuse et parfumée. Un classique de la cuisine méditerranéenne.",
     "season": "Juillet – septembre",
     "use": "Crue, farcie"
@@ -51,6 +58,7 @@
   {
     "id": "bawole-serce",
     "name": "Cœur de bœuf",
+    "taste": "Sucré, doux, charnu",
     "description": "Très gros fruit en forme de cœur, charnu, avec peu de pépins et un goût sucré.",
     "season": "Juillet – septembre",
     "use": "Crue, salades"
@@ -58,6 +66,7 @@
   {
     "id": "noire-de-crimee",
     "name": "Noire de Crimée",
+    "taste": "Profond, sucré-salé, avec une légère note fumée",
     "description": "Tomate sombre rouge-brun au goût profond, sucré et légèrement salé. Originaire de Crimée.",
     "season": "Juillet – septembre",
     "use": "Crue, carpaccio"
@@ -65,6 +74,7 @@
   {
     "id": "ananas",
     "name": "Ananas",
+    "taste": "Sucré, fruité, très doux",
     "description": "Grosse tomate jaune-orangé marbrée de rouge. Sucrée, fruitée et très juteuse.",
     "season": "Juillet – septembre",
     "use": "Crue, salades"
@@ -72,6 +82,7 @@
   {
     "id": "green-zebra",
     "name": "Green Zebra",
+    "taste": "Rafraîchissant, acidulé, légèrement piquant",
     "description": "Tomate verte rayée de vert clair. Légèrement acidulée avec une pointe de piquant, très rafraîchissante.",
     "season": "Juillet – septembre",
     "use": "Salades, crue"
@@ -79,6 +90,7 @@
   {
     "id": "rose-de-berne",
     "name": "Rose de Berne",
+    "taste": "Très sucré, doux et délicat",
     "description": "Variété suisse aux fruits roses de taille moyenne, à la peau fine et au goût très doux et sucré.",
     "season": "Juillet – septembre",
     "use": "Crue, salades"

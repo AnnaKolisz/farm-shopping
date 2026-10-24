@@ -2,6 +2,7 @@
   {
     "id": "antonowka",
     "name": "Antonówka",
+    "taste": "Wyraźnie kwaśny, orzeźwiający, bardzo aromatyczny",
     "description": "Stara polska odmiana o kwaśnym, aromatycznym miąższu. Doskonała do szarlotki, kompotów i przetworów.",
     "season": "Wrzesień – październik",
     "use": "Wypieki, przetwory"
@@ -9,6 +10,7 @@
   {
     "id": "papierowka",
     "name": "Papierówka",
+    "taste": "Delikatnie kwaskowy, soczysty i lekki",
     "description": "Bardzo wczesne, soczyste jabłka o cienkiej skórce i delikatnie kwaskowym smaku. Nie nadają się do długiego przechowywania.",
     "season": "Lipiec – sierpień",
     "use": "Na surowo, mus"
@@ -16,6 +18,7 @@
   {
     "id": "szampion",
     "name": "Szampion",
+    "taste": "Słodki i łagodny, z odrobiną kwasku",
     "description": "Duże, słodkie i chrupiące jabłka o jasnożółtej skórce z rumieńcem. Bardzo popularne w Polsce, dobrze się przechowują.",
     "season": "Październik – marzec",
     "use": "Na surowo, wypieki"
@@ -23,6 +26,7 @@
   {
     "id": "ligol",
     "name": "Ligol",
+    "taste": "Słodko-kwaskowy i soczysty",
     "description": "Duże, czerwone jabłka o słodko-kwaskowym, soczystym miąższu. Polska odmiana, świetna do jedzenia na surowo i na sok.",
     "season": "Październik – kwiecień",
     "use": "Na surowo, soki"
@@ -30,6 +34,7 @@
   {
     "id": "idared",
     "name": "Idared",
+    "taste": "Wyraźnie kwaskowy, z nutą słodyczy",
     "description": "Twarde, kwaskowate jabłka o czerwonym rumieńcu, bardzo trwałe. Dobre do pieczenia, tracą kwasowość w trakcie przechowywania.",
     "season": "Październik – maj",
     "use": "Pieczenie, wypieki"
@@ -37,6 +42,7 @@
   {
     "id": "jonagold",
     "name": "Jonagold",
+    "taste": "Zrównoważony: słodki z lekkim kwaskiem i miodową nutą",
     "description": "Duże jabłka o złoto-czerwonej skórce, soczyste i aromatyczne, o równowadze słodyczy i kwasowości.",
     "season": "Październik – luty",
     "use": "Na surowo, wypieki"
@@ -44,6 +50,7 @@
   {
     "id": "gala",
     "name": "Gala",
+    "taste": "Słodki i delikatny, lekko kwiatowy",
     "description": "Małe lub średnie jabłka o słodkim smaku i chrupiącym miąższu, żółte z czerwonymi pasami. Lubiane przez dzieci.",
     "season": "Wrzesień – styczeń",
     "use": "Na surowo, do lunchboxa"
@@ -51,6 +58,7 @@
   {
     "id": "golden-delicious",
     "name": "Golden Delicious",
+    "taste": "Słodki, łagodny, z miodową nutą",
     "description": "Żółtozłote jabłka o słodkim, łagodnym smaku i miękkim miąższu. Uniwersalne, ale łatwo się obijają.",
     "season": "Wrzesień – marzec",
     "use": "Na surowo, sosy"
@@ -58,6 +66,7 @@
   {
     "id": "granny-smith",
     "name": "Granny Smith",
+    "taste": "Bardzo kwaśny, orzeźwiający i wyrazisty",
     "description": "Intensywnie zielone, bardzo kwaśne i twarde jabłka. Doskonałe do ciast, sałatek i do jedzenia dla miłośników kwaśnego smaku.",
     "season": "Październik – lipiec",
     "use": "Wypieki, sałatki"
@@ -65,6 +74,7 @@
   {
     "id": "fuji",
     "name": "Fuji",
+    "taste": "Bardzo słodki i soczysty, z minimalnym kwaskiem",
     "description": "Bardzo słodkie, chrupiące i soczyste jabłka o różowoczerwonej skórce. Długo się przechowują.",
     "season": "Październik – lipiec",
     "use": "Na surowo"
@@ -72,6 +82,7 @@
   {
     "id": "pink-lady",
     "name": "Pink Lady",
+    "taste": "Słodko-kwaśny, żywy, o owocowym aromacie",
     "description": "Jabłka o różowej skórce, bardzo chrupiące, słodko-kwaśne i aromatyczne. Rzadko brązowieją po przekrojeniu.",
     "season": "Listopad – lipiec",
     "use": "Na surowo, sałatki"
@@ -79,6 +90,7 @@
   {
     "id": "cox",
     "name": "Cox Orange",
+    "taste": "Słodko-kwaśny, intensywny, z nutą orzecha i korzennych przypraw",
     "description": "Angielska odmiana o bogatym, orzechowo-korzennym aromacie. Uważana za jedną z najsmaczniejszych, ale wymagająca w uprawie.",
     "season": "Wrzesień – grudzień",
     "use": "Na surowo"
@@ -86,6 +98,7 @@
   {
     "id": "reneta",
     "name": "Szara reneta",
+    "taste": "Kwaskowo-korzenny, intensywny, z nutą orzecha",
     "description": "Stara odmiana o szorstkiej, szarobrązowej skórce i intensywnym, kwaskowo-korzennym smaku. Cenna w tradycyjnej kuchni.",
     "season": "Październik – kwiecień",
     "use": "Pieczenie, wypieki"

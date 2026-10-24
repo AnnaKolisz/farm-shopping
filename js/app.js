@@ -34,6 +34,7 @@ const I18N = {
     searchPlaceholder: "Szukaj odmiany, smaku, zastosowania…",
     season: "Sezon",
     use: "Zastosowanie",
+    taste: "Smak",
     varieties: (n) => (n === 1 ? "1 odmiana" : n % 10 >= 2 && n % 10 <= 4 && (n % 100 < 12 || n % 100 > 14) ? `${n} odmiany` : `${n} odmian`),
     noResults: "Brak wyników. Spróbuj innej frazy.",
     loadError: "Nie udało się wczytać danych. Uruchom aplikację przez serwer (np. python3 -m http.server)."
@@ -49,6 +50,7 @@ const I18N = {
     searchPlaceholder: "Chercher une variété, un goût, un usage…",
     season: "Saison",
     use: "Usage",
+    taste: "Goût",
     varieties: (n) => (n <= 1 ? `${n} variété` : `${n} variétés`),
     noResults: "Aucun résultat. Essayez un autre mot.",
     loadError: "Impossible de charger les données. Lancez l'application via un serveur (ex. python3 -m http.server)."
@@ -141,6 +143,12 @@ function makeCard(item, t) {
   const title = document.createElement("h2");
   title.textContent = item.name;
 
+  const taste = document.createElement("p");
+  taste.className = "taste";
+  const tasteLabel = document.createElement("strong");
+  tasteLabel.textContent = `${t.taste}: `;
+  taste.append(tasteLabel, item.taste);
+
   const description = document.createElement("p");
   description.textContent = item.description;
 
@@ -154,7 +162,7 @@ function makeCard(item, t) {
   use.textContent = `${t.use}: ${item.use}`;
   meta.append(season, use);
 
-  card.append(title, description, meta);
+  card.append(title, taste, description, meta);
   return card;
 }
 
@@ -178,7 +186,7 @@ async function renderVarieties() {
 
   const q = normalize(state.query.trim());
   const filtered = q
-    ? items.filter((i) => normalize(`${i.name} ${i.description} ${i.season} ${i.use}`).includes(q))
+    ? items.filter((i) => normalize(`${i.name} ${i.taste} ${i.description} ${i.season} ${i.use}`).includes(q))
     : items;
 
   $("result-count").textContent = t.varieties(filtered.length);
